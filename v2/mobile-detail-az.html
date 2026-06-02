@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Mobile Detail AZ — premium mobile car detailing, we come to you</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#06080b;--panel:#0e141b;--line:#1b2530;--cyan:#22e0d6;--chrome:#aab7c4;--white:#eaf2f7}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--white);font-family:"Sora",system-ui,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  a{color:inherit}
+  .ribbon{background:#000;color:var(--cyan);font-size:13px;text-align:center;padding:9px 14px;border-bottom:1px solid var(--line)}.ribbon a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+  .nav{position:sticky;top:0;z-index:20;background:rgba(6,8,11,.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:15px 24px}
+  .nav .logo{font-weight:800;letter-spacing:-.02em;font-size:19px}.nav .logo span{color:var(--cyan)}
+  .nav .call{border:1px solid var(--cyan);color:var(--cyan);text-decoration:none;font-weight:600;padding:9px 16px;border-radius:999px;font-size:14px}
+  .hero{position:relative;overflow:hidden}
+  .hero .bg{position:absolute;inset:0;background:#000 center/cover no-repeat;filter:brightness(.5) saturate(1.1)}
+  .hero .scrim{position:absolute;inset:0;background:radial-gradient(80% 60% at 70% 30%,rgba(34,224,214,.16),transparent 60%),linear-gradient(180deg,rgba(6,8,11,.55),rgba(6,8,11,.97))}
+  .hero .in{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:90px 24px 70px}
+  .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:rgba(255,255,255,.03);color:var(--chrome);padding:7px 14px;border-radius:999px;font-size:13px;letter-spacing:.04em}
+  .pill .d{width:8px;height:8px;border-radius:50%;background:var(--cyan);box-shadow:0 0 14px var(--cyan)}
+  h1{font-size:clamp(44px,8vw,92px);font-weight:800;letter-spacing:-.045em;line-height:.98;margin:20px 0 14px}
+  h1 .g{background:linear-gradient(90deg,#fff,var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{font-size:clamp(18px,2.4vw,22px);color:var(--chrome);max-width:34ch}
+  .rate{margin:18px 0 26px;color:var(--chrome)}.rate .s{color:var(--cyan);letter-spacing:3px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{font-weight:700;text-decoration:none;padding:15px 28px;border-radius:12px;font-size:17px;display:inline-flex;gap:9px;align-items:center}
+  .btn.fill{background:var(--cyan);color:#04201e}.btn.line{border:1px solid var(--line);color:#fff}
+  .marq{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--panel);overflow:hidden;white-space:nowrap}
+  .marq .t{display:inline-block;padding:14px 0;font-weight:600;color:var(--chrome);letter-spacing:.12em;text-transform:uppercase;font-size:13px}
+  .marq .t span{color:var(--cyan);margin:0 18px}
+  section{max-width:1080px;margin:0 auto;padding:72px 24px}
+  .lab{color:var(--cyan);font-weight:600;letter-spacing:.2em;text-transform:uppercase;font-size:13px}
+  h2{font-size:clamp(32px,5vw,52px);font-weight:800;letter-spacing:-.03em;margin:.2em 0 .5em}
+  .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .card{background:linear-gradient(180deg,#0e141b,#0a0f15);border:1px solid var(--line);border-radius:18px;padding:26px;position:relative;overflow:hidden}
+  .card:before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--cyan),transparent)}
+  .card h3{font-weight:700;margin:0 0 8px;font-size:20px}.card p{margin:0;color:var(--chrome);font-size:15px}
+  .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;max-width:1080px;margin:0 auto;padding:0 24px;height:420px}
+  .gallery .p{background:#000 center/cover no-repeat;border-radius:14px;border:1px solid var(--line)}
+  .gallery .p:first-child{grid-row:1/3}
+  .reviews{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
+  .q{background:var(--bg);border:1px solid var(--line);border-radius:16px;padding:24px}.q .s{color:var(--cyan);letter-spacing:2px}.q blockquote{margin:10px 0 14px;font-size:18px;line-height:1.5}.q .who{color:var(--chrome);font-weight:600;font-size:14px}.q .who span{font-weight:400;opacity:.7}
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .ic{background:linear-gradient(180deg,#0e141b,#0a0f15);border:1px solid var(--line);border-radius:16px;padding:26px}.ic h3{color:var(--cyan);margin:0 0 10px;font-weight:700}
+  .end{text-align:center;background:radial-gradient(60% 100% at 50% 0%,rgba(34,224,214,.14),transparent),linear-gradient(180deg,#0a0f15,#06080b)}
+  .end .wrap{max-width:740px;margin:0 auto;padding:72px 24px}
+  footer{text-align:center;color:#4f5d68;font-size:13px;padding:28px 20px}
+  @media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;height:auto}.gallery .p{aspect-ratio:4/3}.gallery .p:first-child{grid-row:auto;grid-column:1/3}.info{grid-template-columns:1fr}}
+</style></head>
+<body>
+<div class="ribbon">✨ Preview built from Mobile Detail AZ's public Google profile — not affiliated until claimed. <a href="https://cal.com/daniel-hohnloser/15min">Owner? Claim it →</a></div>
+<nav class="nav"><div class="logo">Mobile Detail <span>AZ</span></div><a class="call" href="tel:+16027300887">Get a quote</a></nav>
+
+<header class="hero">
+  <div class="bg" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAHpxf6LMnhwPLBO6NmRWH9oXpPdFebss216Jy-1_r64M_3LmMESvcj8EP60oqIRYyyknVTeCTbuVrHjDeky75uzVE46yRST4cPzJJUBACyrXvYBiKpmvdm2To3Qk4NPc4VzXM1F2A=w1920-h1080-k-no')"></div>
+  <div class="scrim"></div>
+  <div class="in">
+    <span class="pill"><span class="d"></span> Tolleson &amp; Phoenix metro · We come to you</span>
+    <h1>Showroom clean.<br><span class="g">At your driveway.</span></h1>
+    <p>Premium mobile detailing — interior, exterior, and stubborn road-tar &amp; stain removal. We bring everything.</p>
+    <div class="rate"><span class="s">★★★★★</span> &nbsp;4.8 · 50 Google reviews</div>
+    <div class="cta">
+      <a class="btn fill" href="tel:+16027300887">📞 (602) 730-0887</a>
+      <a class="btn line" href="#services">See detailing →</a>
+    </div>
+  </div>
+</header>
+
+<div class="marq"><div class="t">INTERIOR DETAIL <span>◆</span> EXTERIOR &amp; PAINT <span>◆</span> TAR &amp; STAIN REMOVAL <span>◆</span> SHOW-CAR FINISH <span>◆</span> MOBILE — WE COME TO YOU <span>◆</span> SAME-DAY WHEN OPEN</div></div>
+
+<section id="services">
+  <div class="lab">Detailing menu</div>
+  <h2>What we make spotless</h2>
+  <div class="svc">
+    <div class="card"><h3>Full Interior</h3><p>Seats, carpets, panels, glass — “cleaned my lowrider like I just bought it.”</p></div>
+    <div class="card"><h3>Exterior &amp; Paint</h3><p>Wash, decon, and gloss. Built to make the finish pop in the Arizona sun.</p></div>
+    <div class="card"><h3>Tar &amp; Road-Work Removal</h3><p>“Excellent job getting rid of all the tar on the wheel wells and trim. My car looks great!”</p></div>
+    <div class="card"><h3>Fleet &amp; Last-Minute</h3><p>“We had 2 cars detailed ASAP for a client — Josh responded right away and showed up.”</p></div>
+  </div>
+</section>
+
+<div class="gallery">
+  <div class="p" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAG4XZXzwTGV_FYXtWi563oTHe7kyGeN6ahKpxHLqyatd_HoRUamCnyL3LsGxZ6VOxyTPkuUEIgL9pRxUjWKXS33eAg1wcCLofppkFmWiSeTVOnNXsOXfjZ7kbfVZsx1u2FP3Kgo=w1920-h1080-k-no')"></div>
+  <div class="p" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAGETUDkoDdKNuDZjjq3rdVmE1nv9L4NWraisOpSyBMFMk5fruI4PYdZpAKQu3n5a3SbpUWvzXSn2ec8taU5Ld8DjuG1BWQrDtpyYMXjlZpP_JHGmdWwydOaiX6-uw1Mr7PJKoAC=w1920-h1080-k-no')"></div>
+  <div class="p" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAE0qORu6ep-y5nyi9yloNKILTqsaoUdX4qWo-qUo5wTU1XIoSKEcGE2YEAYIgqEG28vQYsTakEApIDuwv2sHqhOS_rW87li5PjHID8lZpm58bFdrX96SEPPfmXfELHrZFEV_so=w1920-h1080-k-no')"></div>
+</div>
+
+<div class="reviews"><section>
+  <div class="lab">Reputation</div>
+  <h2>“He's now my guy.”</h2>
+  <div class="qgrid">
+    <div class="q"><div class="s">★★★★★</div><blockquote>“If you're looking for a pro detailer, Mobile Detail AZ is the way to go. We needed 2 cars done ASAP — Josh responded right away and showed up.”</blockquote><div class="who">Jack &amp; Melissa A. <span>· Google review</span></div></div>
+    <div class="q"><div class="s">★★★★★</div><blockquote>“Did an excellent job getting rid of all the tar on the wheel wells and trim. My car looks great!”</blockquote><div class="who">Blanca E. <span>· Google review</span></div></div>
+    <div class="q"><div class="s">★★★★★</div><blockquote>“He did such a great job! He is now ‘my guy.’”</blockquote><div class="who">Chris M. <span>· Google review</span></div></div>
+  </div>
+</section></div>
+
+<section>
+  <div class="info">
+    <div class="ic"><h3>Service area</h3><p style="color:var(--chrome);margin:0 0 14px">Based in Tolleson (8511 W Polk St) — mobile across the Phoenix West Valley &amp; metro.</p><a class="btn line" href="https://www.google.com/maps/search/?api=1&query=Mobile+Detail+AZ+Tolleson" target="_blank">Open in Maps →</a></div>
+    <div class="ic"><h3>Booking</h3><p style="color:var(--chrome);margin:0">Call or text (602) 730-0887 for a quote. Flexible scheduling — they come to your home or work.</p></div>
+  </div>
+</section>
+
+<section class="end"><div class="wrap">
+  <div class="lab">For the owner</div>
+  <h2>Josh — your site is already detailed.</h2>
+  <p style="font-size:19px;color:var(--chrome);max-width:46ch;margin:0 auto 24px">4.8★ from 50 happy customers and no website to send them to. We built this from your public Google profile. Claim it, add your packages &amp; prices, point a domain.</p>
+  <a class="btn fill" href="https://cal.com/daniel-hohnloser/15min">Claim this site →</a>
+</div></section>
+
+<footer>Pre-built preview for Mobile Detail AZ · made from public Google data · not affiliated until claimed · noindex demo</footer>
+</body></html>

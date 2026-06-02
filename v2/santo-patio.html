@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Santo Patio Taco Trailer — Austin street tacos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#3b2412;--cream:#fff7ea;--marigold:#f6a609;--terra:#e2562b;--lime:#5f9e3f;--pink:#e84a7f;--card:#fffdf8}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:"Nunito",system-ui,sans-serif;font-size:17px;line-height:1.6}
+  .round{font-family:"Baloo 2",system-ui,sans-serif}
+  a{color:inherit}
+  .papel{height:18px;background:repeating-linear-gradient(90deg,var(--terra) 0 28px,var(--marigold) 28px 56px,var(--lime) 56px 84px,var(--pink) 84px 112px)}
+  .ribbon{background:#3b2412;color:#ffe9b8;font-size:13px;text-align:center;padding:9px 14px}.ribbon a{color:#ffd166;font-weight:800;text-decoration:underline;text-underline-offset:3px}
+  .nav{display:flex;justify-content:space-between;align-items:center;padding:16px 22px;position:sticky;top:0;background:rgba(255,247,234,.92);backdrop-filter:blur(10px);z-index:20;border-bottom:2px solid #f0dcb8}
+  .nav .logo{font-family:"Baloo 2";font-weight:800;font-size:22px;color:var(--terra)}
+  .nav .call{background:var(--lime);color:#fff;font-weight:800;text-decoration:none;padding:10px 18px;border-radius:999px;font-size:14px;box-shadow:0 6px 0 #4a7d31}
+  .hero{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;max-width:1100px;margin:0 auto;padding:46px 22px 30px;align-items:center}
+  .hero .kick{display:inline-block;background:#fff;border:2px solid var(--marigold);color:var(--terra);font-weight:800;border-radius:999px;padding:6px 14px;font-size:13px;letter-spacing:.04em}
+  .hero h1{font-family:"Baloo 2";font-weight:800;font-size:clamp(46px,8vw,84px);line-height:.98;margin:14px 0 10px;color:var(--terra)}
+  .hero h1 em{font-style:normal;color:var(--lime)}
+  .hero p{font-size:20px;max-width:34ch;color:#6b4a2c}
+  .stars{color:var(--marigold);font-size:20px;letter-spacing:2px}.rev-n{color:#9a7a52;font-weight:700}
+  .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:20px}
+  .btn{font-family:"Baloo 2";font-weight:700;text-decoration:none;padding:14px 24px;border-radius:16px;font-size:17px;display:inline-flex;gap:8px;align-items:center}
+  .btn.fill{background:var(--terra);color:#fff;box-shadow:0 7px 0 #ab3a1b}.btn.alt{background:#fff;color:var(--terra);border:2px solid var(--terra)}
+  .hero .photo{border-radius:28px;overflow:hidden;border:5px solid #fff;box-shadow:0 22px 50px rgba(59,36,18,.18);aspect-ratio:4/5;background:#eee center/cover no-repeat;transform:rotate(2deg)}
+  @media(max-width:760px){.hero{grid-template-columns:1fr}.hero .photo{transform:none;aspect-ratio:4/3}}
+  .gallery{max-width:1100px;margin:8px auto 0;padding:0 22px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+  .gallery .g{aspect-ratio:1/1;border-radius:18px;background:#eee center/cover no-repeat;border:4px solid #fff;box-shadow:0 10px 24px rgba(59,36,18,.12)}
+  section{max-width:1100px;margin:0 auto;padding:60px 22px}
+  h2{font-family:"Baloo 2";font-weight:800;font-size:clamp(34px,5vw,52px);text-align:center;color:var(--terra);margin:0 0 6px}
+  .sub{text-align:center;color:#8a6a44;margin:0 auto 28px;max-width:40ch}
+  .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+  .item{background:var(--card);border:2px solid #f0dcb8;border-radius:20px;padding:22px}
+  .item h3{font-family:"Baloo 2";font-weight:700;margin:0 0 6px;font-size:21px}.item p{margin:0;color:#7a5a38;font-size:15px}
+  .item .price{display:inline-block;margin-top:10px;background:#fff3d6;color:var(--terra);font-weight:800;border-radius:8px;padding:3px 10px;font-size:13px}
+  .reviews{background:#fff;border-top:2px dashed #f0dcb8;border-bottom:2px dashed #f0dcb8}
+  .qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .q{background:var(--cream);border-radius:20px;padding:24px;border:2px solid #f0dcb8}.q blockquote{margin:8px 0 12px;font-size:18px;line-height:1.5;font-weight:600}.q .who{color:#9a7a52;font-weight:700;font-size:14px}.q .who span{font-weight:400}
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .icard{background:var(--card);border:2px solid #f0dcb8;border-radius:20px;padding:24px}.icard h3{font-family:"Baloo 2";margin:0 0 10px;color:var(--terra)}
+  .hrow{display:flex;justify-content:space-between;border-bottom:1px dashed #e7d4ad;padding:5px 0;color:#7a5a38;font-size:15px}.hrow b{color:var(--ink)}
+  .end{background:linear-gradient(135deg,var(--marigold),var(--terra));color:#fff;text-align:center}
+  .end h2{color:#fff}.end .btn.fill{background:#fff;color:var(--terra);box-shadow:0 7px 0 rgba(0,0,0,.15)}
+  .end .wrap{max-width:740px;margin:0 auto;padding:64px 22px}
+  footer{text-align:center;color:#a98a62;font-size:13px;padding:26px 20px}
+  @media(max-width:600px){.gallery{grid-template-columns:repeat(2,1fr)}.info{grid-template-columns:1fr}}
+</style></head>
+<body>
+<div class="ribbon">🌮 Preview built from Santo Patio's public Google profile — not affiliated until claimed. <a href="https://cal.com/daniel-hohnloser/15min">Owner? Claim it →</a></div>
+<div class="papel"></div>
+<nav class="nav"><div class="logo">🌮 Santo Patio</div><a class="call" href="tel:+17374197841">Call to order</a></nav>
+
+<header class="hero">
+  <div>
+    <span class="kick">Govalle · Austin TX · Taco Trailer</span>
+    <h1 class="round">Some of the best<br><em>street tacos</em><br>in Austin.</h1>
+    <p>Pastor, breakfast tacos, and a 5-taco street plate so you can try them all. Open 8am–10pm, every day.</p>
+    <div><span class="stars">★★★★★</span> <span class="rev-n">4.8 · 84 Google reviews</span></div>
+    <div class="cta">
+      <a class="btn fill" href="tel:+17374197841">📞 (737) 419-7841</a>
+      <a class="btn alt" href="#menu">See the tacos</a>
+    </div>
+  </div>
+  <div class="photo" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAEhL42nB1ot9-ISiWFgErMMGFhDkH3rQnErTY1gFdGNcCQ9JGFsglnAgjwf8vIwGhNbRWEJTdEBhBpXfrPYaRHdWwzRLuGKOT8wJZV05trxX-hY9yGN9t0Xt5tsNZPFHNDgf7QURAYEAkMt=w1920-h1080-k-no')"></div>
+</header>
+
+<div class="gallery">
+  <div class="g" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAENIX8l_EJoyU2uRyrXuAtLFjrASk2OnIvM-Jxw6OUoKUeEHPImd_KBK4J62-7VblpSl6bqWmrIO6GdZnx7O_B1GJFCAmIXTqWY6pdlZMlMvd1itcyG2R1kHrq70_U2FbRerelrLZciKjQ=w1920-h1080-k-no')"></div>
+  <div class="g" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAFjG4ccIuly-wUlnaHYhv4ZEu3KzuMwtJ_3whSM5kwV-53AM4mGP3OAjJO95S6ZBhLL7TeeB1gpKDr4cEeUu_fX81BFIEFSPhTZY3MzQHQ3R75_w-rPQdWIloRselaGqKs9N1swL9lOA6ja=w1920-h1080-k-no')"></div>
+  <div class="g" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAHzK6H9Yi1oF2m0yT44zxvVow1fmsBBwqVBW6Evpd1uDg7GU29uIPcr4NEilLg36igYMeuwd0TnkJlizr1M5uAZ1FZ5RKKh6FcTuzl7Vd9mK56Bz1_DYiD5aDru484WpWvtW_41uc55ag_X=w1920-h1080-k-no')"></div>
+</div>
+
+<section id="menu">
+  <h2>What's on the trailer</h2>
+  <p class="sub">Fresh, well-priced, made-to-order. $10–$20 a plate.</p>
+  <div class="menu">
+    <div class="item"><h3>Street Taco Plate</h3><p>“They give you 5 different ones so you can try them all.” The move for first-timers.</p><span class="price">$10–$20</span></div>
+    <div class="item"><h3>Al Pastor</h3><p>The regulars' pick — “especially pastor,” fresh off the trompo.</p><span class="price">Street taco</span></div>
+    <div class="item"><h3>Breakfast Tacos</h3><p>Morning fuel from 8am — eggs, salsa, and the good tortillas.</p><span class="price">AM only</span></div>
+    <div class="item"><h3>Salsas &amp; sides</h3><p>House salsas to push it over the top. Cash &amp; card welcome.</p><span class="price">Add-on</span></div>
+  </div>
+</section>
+
+<div class="reviews"><section>
+  <h2>Austin taco people approve</h2>
+  <p class="sub">4.8★ from 84 Google reviews</p>
+  <div class="qgrid">
+    <div class="q"><div class="stars">★★★★★</div><blockquote>“Some of the best tacos I've had in Austin. Love that they give you 5 different ones when you get the street tacos so you can try them all!”</blockquote><div class="who">Jake T. <span>· Google review</span></div></div>
+    <div class="q"><div class="stars">★★★★★</div><blockquote>“Well priced, fresh tasty tacos. I love the street tacos, especially pastor.”</blockquote><div class="who">Evan D. <span>· Google review</span></div></div>
+    <div class="q"><div class="stars">★★★★★</div><blockquote>“Really good tacos.”</blockquote><div class="who">Andy B. <span>· Google review</span></div></div>
+  </div>
+</section></div>
+
+<section>
+  <div class="info">
+    <div class="icard"><h3>📍 Find us</h3><p style="color:#7a5a38;margin:0 0 14px">979 Springdale Rd, Austin, TX 78702 (Govalle)</p><a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=Santo+Patio+Taco+Trailer+979+Springdale+Rd+Austin" target="_blank">Open in Maps →</a></div>
+    <div class="icard"><h3>🕘 Hours</h3>
+      <div class="hrow"><b>Mon–Sat</b><span>8:00am – 10:00pm</span></div>
+      <div class="hrow"><b>Sunday</b><span>8:00am – 10:00pm</span></div>
+      <div class="hrow"><b>Order</b><span>Walk up or call ahead</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="end"><div class="wrap">
+  <h2 class="round">Santo Patio — this site is yours.</h2>
+  <p style="font-size:19px;max-width:46ch;margin:0 auto 22px">84 five-star reviews and no website yet. We built this from your public Google page. Claim it, add your menu, point a domain — done this week.</p>
+  <a class="btn fill" href="https://cal.com/daniel-hohnloser/15min">Claim this site →</a>
+</div></section>
+
+<footer>Pre-built preview for Santo Patio Taco Trailer · made from public Google data · not affiliated until claimed · noindex demo</footer>
+</body></html>

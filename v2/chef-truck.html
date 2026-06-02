@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>CHEF TRUCK — Turkish street food, late nights in East Austin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#120f0d;--paper:#fbf3e7;--ember:#f2711c;--turmeric:#ffb703;--smoke:#1d1815;--cream:#f3e7d3;--line:#3a302a}
+  *{box-sizing:border-box}html{scroll-behavior:smooth}
+  body{margin:0;background:var(--smoke);color:var(--cream);font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .display{font-family:"Anton",Impact,sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:.92}
+  a{color:inherit}
+  .ribbon{background:var(--ink);color:var(--turmeric);font-size:13px;text-align:center;padding:9px 14px;border-bottom:1px solid var(--line)}
+  .ribbon a{color:#fff;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+  .nav{position:sticky;top:0;z-index:20;background:rgba(18,15,13,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
+  .nav .logo{font-family:"Anton";font-size:22px;letter-spacing:.04em}.nav .logo span{color:var(--ember)}
+  .nav .call{background:var(--ember);color:#120f0d;font-weight:700;padding:10px 16px;border-radius:999px;text-decoration:none;font-size:14px}
+  .hero{position:relative;min-height:88vh;display:grid;place-items:center;text-align:center;overflow:hidden}
+  .hero .bg{position:absolute;inset:0;background:#000 center/cover no-repeat;filter:brightness(.42) saturate(1.15)}
+  .hero .grad{position:absolute;inset:0;background:radial-gradient(120% 80% at 50% 0%,transparent,rgba(18,15,13,.65) 75%),linear-gradient(180deg,rgba(18,15,13,.5),rgba(18,15,13,.95))}
+  .hero .in{position:relative;z-index:2;padding:40px 22px;max-width:900px}
+  .kicker{color:var(--turmeric);font-weight:700;letter-spacing:.26em;text-transform:uppercase;font-size:13px}
+  .hero h1{font-size:clamp(64px,16vw,168px);margin:.08em 0 .12em;color:#fff;text-shadow:0 4px 40px rgba(0,0,0,.5)}
+  .hero h1 .e{color:var(--ember)}
+  .hero p{font-size:clamp(18px,2.6vw,23px);color:var(--cream);max-width:30ch;margin:0 auto 26px}
+  .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;text-decoration:none;padding:15px 26px;border-radius:14px;font-size:17px}
+  .btn.fill{background:var(--ember);color:#120f0d}.btn.line{border:1.5px solid rgba(243,231,211,.5);color:#fff}
+  .openpill{display:inline-flex;gap:8px;align-items:center;margin-top:22px;font-size:14px;color:var(--cream);background:rgba(255,255,255,.07);border:1px solid var(--line);padding:8px 14px;border-radius:999px}
+  .dot{width:9px;height:9px;border-radius:50%;background:#2ecc71;box-shadow:0 0 12px #2ecc71}
+  .strip{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line)}
+  .strip .ph{aspect-ratio:1/1;background:#000 center/cover no-repeat;filter:saturate(1.1)}
+  @media(max-width:720px){.strip{grid-template-columns:repeat(2,1fr)}}
+  section{max-width:1040px;margin:0 auto;padding:72px 22px}
+  .eyebrow{color:var(--ember);font-weight:700;letter-spacing:.2em;text-transform:uppercase;font-size:13px;text-align:center}
+  h2.display{font-size:clamp(38px,6vw,68px);text-align:center;color:var(--paper);margin:.15em 0 .5em}
+  .menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+  .dish{border:1px solid var(--line);border-radius:18px;padding:24px;background:linear-gradient(180deg,#221c18,#1a1512)}
+  .dish h3{font-family:"Anton";font-size:24px;letter-spacing:.02em;color:#fff;margin:0 0 6px}.dish p{color:#c9b89f;margin:0;font-size:15px}
+  .dish .tag{display:inline-block;margin-top:12px;color:var(--turmeric);font-weight:700;font-size:13px;letter-spacing:.05em}
+  .quotes{background:var(--paper);color:var(--ink)}
+  .quotes .wrap{max-width:1040px;margin:0 auto;padding:72px 22px}
+  .qgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .q{background:#fff;border-radius:18px;padding:24px;box-shadow:0 18px 50px rgba(18,15,13,.10);border:1px solid #efe2cd}
+  .q .stars{color:var(--ember);letter-spacing:2px}.q blockquote{margin:10px 0 14px;font-size:18px;line-height:1.5}
+  .q .who{font-weight:700;color:#7a6a55;font-size:14px}.q .who span{font-weight:400;color:#a89880}
+  .info{display:grid;grid-template-columns:1.1fr 1fr;gap:24px;align-items:stretch}
+  .card{border:1px solid var(--line);border-radius:20px;padding:28px;background:linear-gradient(180deg,#221c18,#1a1512)}
+  .card h3{font-family:"Anton";font-size:26px;color:#fff;margin:0 0 14px;letter-spacing:.02em}
+  .hours{display:grid;gap:7px}.hours div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding-bottom:6px;color:#cdbca3;font-size:15px}
+  .hours b{color:#fff;font-weight:600}
+  .closed{color:#a08a72}
+  .end{text-align:center;background:linear-gradient(135deg,var(--ember),#d2480a);color:#1a120c}
+  .end .wrap{max-width:760px;margin:0 auto;padding:70px 22px}
+  .end h2{color:#1a120c}.end .btn.fill{background:#120f0d;color:var(--turmeric)}
+  footer{text-align:center;color:#8a7860;font-size:13px;padding:30px 20px;background:var(--ink)}
+  @media(max-width:760px){.info{grid-template-columns:1fr}}
+</style></head>
+<body>
+<div class="ribbon">🍢 Preview built from CHEF TRUCK's public Google profile — not affiliated until claimed. <a href="https://cal.com/daniel-hohnloser/15min">Owner? Claim it →</a></div>
+<nav class="nav"><div class="logo">CHEF<span>·</span>TRUCK</div><a class="call" href="tel:+17377865544">📞 Call to order</a></nav>
+
+<header class="hero">
+  <div class="bg" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAHprwNqyq4tOv4x1mWtcgdAv9EePfrvEKzp1fE6wlELHHSetcHC1VLX533IhsaYm6jrX6XH-C0sHAHZxz7mXqFhQP6gPIcZ1TeyYncYg6LxbvliArgN5Y2youZ4kqIOTIOwnrykrw=w1920-h1080-k-no')"></div>
+  <div class="grad"></div>
+  <div class="in">
+    <div class="kicker">East Austin · Turkish Street Food</div>
+    <h1 class="display">CHEF<br><span class="e">TRUCK</span></h1>
+    <p>Turkish street food &amp; late-night smash burgers on E. Cesar Chavez — open past 2am.</p>
+    <div class="cta-row">
+      <a class="btn fill" href="tel:+17377865544">📞 (737) 786-5544</a>
+      <a class="btn line" href="#menu">See the menu</a>
+    </div>
+    <div class="openpill"><span class="dot"></span> Kitchen runs late — till 3am Fri &amp; Sat</div>
+  </div>
+</header>
+
+<div class="strip">
+  <div class="ph" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAGRXDIes8YhiQw6gtDy1TDMhxpBFN1S_MNnnMkLRgmcD4iQJKmJ7p0SxP1g6E8G8CyUEtgoSdj372jxWOSqQlOQiHp6pTvXmMt7_sbca2SCzZ6HLBC5aW62VhkJy5GKbURLeYYU=w1920-h1080-k-no')"></div>
+  <div class="ph" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAEMT8s29kTrXdQ8gJk3i3SM0n0S6mmXiqoqRr7WPD97czgH7sU44ExhxhokMjSDaB5t-IMu2t8Axsa1APP1hg27koi2US5yhQheke5v5Kf_Ui_4be4icmsKal2foBxAoLQhsCegf5fWul0=w1920-h1080-k-no')"></div>
+  <div class="ph" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAEoah3M4APrO3ELp2-yzP2NdbH-HYXW7F8ucsWJU3WVQG3u0oJ687KWMs6lSqPYXMUqvrRRLHjaYTMGnpkaWnecQlN_tTxcjcMB875rstdWKovDCyulTu2wGmib8Pp2juRsIXGZ=w1920-h1080-k-no')"></div>
+  <div class="ph" style="background-image:url('https://lh3.googleusercontent.com/gps-cs-s/APNQkAEkUj5QgLtIHtcsqijDJvpDBSGiiAsxFdECFss-ZlVbWh7gWoY3e1ChlewsmWVICvGIS7byqyHjEUPgcn7sglR8WAqIvL5kAf4HBrqudCXVoDSkJysLNOSJhMrFQQpAb4WQ4oawhPZXHzgk=w1920-h1080-k-no')"></div>
+</div>
+
+<section id="menu">
+  <div class="eyebrow">What people order</div>
+  <h2 class="display">Real Turkish street food</h2>
+  <div class="menu">
+    <div class="dish"><h3>Kokoreç</h3><p>The real thing — “the same as Turkish kokoreç,” as one regular put it. Charcoal, herbs, the works.</p><span class="tag">Street classic</span></div>
+    <div class="dish"><h3>Tantuni</h3><p>Hand-rolled, fast off the flat-top, packed with flavor — fresh and bright.</p><span class="tag">Crowd favorite</span></div>
+    <div class="dish"><h3>Smash Burger</h3><p>“Smash burger was excellent” — multiple dipping sauces with the fries, and a wet wipe on the side.</p><span class="tag">Late-night fuel</span></div>
+    <div class="dish"><h3>Fries &amp; sauces</h3><p>Crisp, generous, and built for the 2am crowd. $10–$20 a plate.</p><span class="tag">Add-on</span></div>
+  </div>
+</section>
+
+<div class="quotes"><div class="wrap">
+  <div class="eyebrow" style="color:#d2480a">227 Google reviews · 4.9★</div>
+  <h2 class="display" style="color:var(--ink)">The reviews do the talking</h2>
+  <div class="qgrid">
+    <div class="q"><div class="stars">★★★★★</div><blockquote>“The food was fresh, packed with flavor, and totally captured that real street food spirit.”</blockquote><div class="who">Yunus E. <span>· Google review</span></div></div>
+    <div class="q"><div class="stars">★★★★★</div><blockquote>“Smash burger was excellent and they put in nice details like a wet hand wipe and multiple dipping sauces with the fries.”</blockquote><div class="who">Caitlin B. <span>· Google review</span></div></div>
+    <div class="q"><div class="stars">★★★★★</div><blockquote>“Excellent food and great hospitality! Everything was so delicious I forgot to take pictures and just started eating.”</blockquote><div class="who">Murat E. <span>· Google review</span></div></div>
+  </div>
+</div></div>
+
+<section>
+  <div class="info">
+    <div class="card">
+      <h3>Find the truck</h3>
+      <p style="color:#cdbca3;margin:0 0 16px">1906 E Cesar Chavez St, East Austin, TX 78702</p>
+      <a class="btn line" style="color:#fff" href="https://www.google.com/maps/search/?api=1&query=CHEF+TRUCK+1906+E+Cesar+Chavez+St+Austin" target="_blank">Open in Maps →</a>
+      <p style="color:#8a7860;font-size:14px;margin-top:18px">$10–$20 · cash &amp; card · dine on the patio</p>
+    </div>
+    <div class="card">
+      <h3>Hours</h3>
+      <div class="hours">
+        <div><b>Mon</b><span>3:30pm – 2:00am</span></div>
+        <div><b>Tue</b><span class="closed">Closed</span></div>
+        <div><b>Wed–Thu</b><span>3:30pm – 2:30am</span></div>
+        <div><b>Fri–Sat</b><span>3:30pm – 3:00am</span></div>
+        <div><b>Sun</b><span>3:30pm – 2:00am</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="end"><div class="wrap">
+  <div class="eyebrow" style="color:#3a1c08">For the owner</div>
+  <h2 class="display">This is your website — for free, already built.</h2>
+  <p style="font-size:19px;max-width:46ch;margin:0 auto 22px">CHEF TRUCK has 227 five-star reviews and no website. We built this from your public Google profile. Claim it, point it at chef-truck.com, and own your late-night crowd.</p>
+  <a class="btn fill" href="https://cal.com/daniel-hohnloser/15min">Claim this site →</a>
+</div></section>
+
+<footer>Pre-built preview for CHEF TRUCK · made from public Google data · not affiliated until claimed · noindex demo</footer>
+</body></html>
