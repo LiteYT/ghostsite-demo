@@ -1,0 +1,35 @@
+[
+  {
+    "business": "Accurate Mobile Mechanic",
+    "sourceTitle": "Accurate Mobile Mechanic – Brakes, Batteries, AC & More",
+    "slug": "accurate-mobile-mechanic",
+    "rating": 4.9,
+    "reviews": 162,
+    "phone": "(480) 425-2353",
+    "website": null,
+    "livePath": "/ghostsite-demo/v2/accurate-mobile-mechanic.html",
+    "sms": "Saw Accurate Mobile Mechanic has 4.9★ with 162 reviews but no website, so I built you one to show you: {url} — want it live on your own domain for $399? No pressure."
+  },
+  {
+    "business": "Papi's Mobile Services",
+    "sourceTitle": "Papi's mobile services",
+    "slug": "papis-mobile-services",
+    "rating": 4.9,
+    "reviews": 58,
+    "phone": "(480) 799-8022",
+    "website": null,
+    "livePath": "/ghostsite-demo/v2/papis-mobile-services.html",
+    "sms": "Saw Papi's Mobile Services has 4.9★ reviews and no website, so I built you one around what customers already say: {url} — want it live on your own domain for $399? No pressure."
+  },
+  {
+    "business": "Elite Mobile Auto Electric",
+    "sourceTitle": "Elite Mobile Auto Electric LLC",
+    "slug": "elite-mobile-auto-electric",
+    "rating": 4.7,
+    "reviews": 93,
+    "phone": "(602) 688-0891",
+    "website": null,
+    "livePath": "/ghostsite-demo/v2/elite-mobile-auto-electric.html",
+    "sms": "Saw Elite Mobile Auto Electric has 4.7★ with 93 reviews but no website, so I built you a preview from your Google reviews: {url} — want it live on your own domain for $399? No pressure."
+  }
+]
